@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="other" rowHeight="191" id="yYL-M4-mPx" customClass="MessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="514" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yYL-M4-mPx" id="Q47-NW-ToB">
+                <rect key="frame" x="0.0" y="0.0" width="514" height="190.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="other" translatesAutoresizingMaskIntoConstraints="NO" id="5ds-Wu-m3s">
+                        <rect key="frame" x="10" y="38" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="4O3-fT-jpc"/>
+                            <constraint firstAttribute="height" constant="40" id="9X1-mO-ZE1"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGC-n6-PVQ">
+                        <rect key="frame" x="10" y="10" width="494" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSs-x4-Z32">
+                        <rect key="frame" x="60" y="38" width="43" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="eeJ-NU-cZj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5ds-Wu-m3s" firstAttribute="leading" secondItem="Q47-NW-ToB" secondAttribute="leading" constant="10" id="DAE-ON-dZg"/>
+                    <constraint firstItem="pSs-x4-Z32" firstAttribute="leading" secondItem="5ds-Wu-m3s" secondAttribute="trailing" constant="10" id="L7v-i4-6Ij"/>
+                    <constraint firstItem="WGC-n6-PVQ" firstAttribute="top" secondItem="Q47-NW-ToB" secondAttribute="top" constant="10" id="adX-Q1-HXB"/>
+                    <constraint firstItem="WGC-n6-PVQ" firstAttribute="leading" secondItem="Q47-NW-ToB" secondAttribute="leading" constant="10" id="c5q-pE-ybC"/>
+                    <constraint firstItem="pSs-x4-Z32" firstAttribute="top" secondItem="WGC-n6-PVQ" secondAttribute="bottom" constant="10" id="ggF-Gm-OIH"/>
+                    <constraint firstAttribute="trailing" secondItem="WGC-n6-PVQ" secondAttribute="trailing" constant="10" id="hhQ-ZZ-V5E"/>
+                    <constraint firstItem="5ds-Wu-m3s" firstAttribute="top" secondItem="WGC-n6-PVQ" secondAttribute="bottom" constant="10" id="zY2-KF-7DY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentBtn" destination="pSs-x4-Z32" id="sxV-IX-tS5"/>
+                <outlet property="headImage" destination="5ds-Wu-m3s" id="z7p-mC-vdt"/>
+                <outlet property="timeLabel" destination="WGC-n6-PVQ" id="5Ep-pl-G0b"/>
+            </connections>
+            <point key="canvasLocation" x="62" y="-31"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="other" width="100" height="100"/>
+    </resources>
+</document>

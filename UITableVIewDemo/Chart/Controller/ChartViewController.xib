@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChartViewController">
+            <connections>
+                <outlet property="bottomSpace" destination="80L-IO-95q" id="65k-Fc-ZkV"/>
+                <outlet property="tableview" destination="Uwy-Iu-LMp" id="1u8-KP-Hzc"/>
+                <outlet property="textFiled" destination="iXp-Qm-idG" id="nmU-0s-x20"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Crh-EO-2pf">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xfn-EL-yCy">
+                            <rect key="frame" x="336" y="5" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="0jq-WQ-p9X"/>
+                                <constraint firstAttribute="width" constant="34" id="P9F-JJ-HOg"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="chat_bottom_up_nor"/>
+                            <state key="highlighted" backgroundImage="chat_bottom_up_press"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7p-oj-j0l">
+                            <rect key="frame" x="297" y="5" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="4Sh-u4-aYH"/>
+                                <constraint firstAttribute="width" constant="34" id="zoP-1W-WsD"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="chat_bottom_smile_nor"/>
+                            <state key="highlighted" backgroundImage="chat_bottom_smile_nor_press"/>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iXp-Qm-idG">
+                            <rect key="frame" x="44" y="5" width="248" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="1Pc-Dc-k5w"/>
+                            </connections>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-Sr-Joc">
+                            <rect key="frame" x="5" y="5" width="34" height="34"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="DCC-xZ-e3h"/>
+                                <constraint firstAttribute="width" constant="34" id="KhM-YL-cgK"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="chat_bottom_voice_nor"/>
+                            <state key="highlighted" backgroundImage="chat_bottom_voice_press"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94102337971870142" green="0.94102337971870142" blue="0.94102337971870142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1HS-q9-jvf"/>
+                        <constraint firstAttribute="bottom" secondItem="iXp-Qm-idG" secondAttribute="bottom" constant="5" id="2EX-66-aNG"/>
+                        <constraint firstAttribute="bottom" secondItem="Xfn-EL-yCy" secondAttribute="bottom" constant="5" id="511-Jv-q2t"/>
+                        <constraint firstAttribute="bottom" secondItem="s7p-oj-j0l" secondAttribute="bottom" constant="5" id="GzO-DR-YeL"/>
+                        <constraint firstItem="iXp-Qm-idG" firstAttribute="top" secondItem="Crh-EO-2pf" secondAttribute="top" constant="5" id="Ihn-IN-Sxo"/>
+                        <constraint firstItem="Xfn-EL-yCy" firstAttribute="top" secondItem="Crh-EO-2pf" secondAttribute="top" constant="5" id="T6b-ra-BlZ"/>
+                        <constraint firstAttribute="bottom" secondItem="dSk-Sr-Joc" secondAttribute="bottom" constant="5" id="Vdo-Ry-jUy"/>
+                        <constraint firstItem="dSk-Sr-Joc" firstAttribute="leading" secondItem="Crh-EO-2pf" secondAttribute="leading" constant="5" id="cIN-xP-CWo"/>
+                        <constraint firstItem="dSk-Sr-Joc" firstAttribute="top" secondItem="Crh-EO-2pf" secondAttribute="top" constant="5" id="dtT-Ak-qgJ"/>
+                        <constraint firstItem="iXp-Qm-idG" firstAttribute="leading" secondItem="dSk-Sr-Joc" secondAttribute="trailing" constant="5" id="ikv-zm-FVX"/>
+                        <constraint firstItem="s7p-oj-j0l" firstAttribute="leading" secondItem="iXp-Qm-idG" secondAttribute="trailing" constant="5" id="sZq-US-JRD"/>
+                        <constraint firstItem="s7p-oj-j0l" firstAttribute="top" secondItem="Crh-EO-2pf" secondAttribute="top" constant="5" id="sle-kZ-zTN"/>
+                        <constraint firstAttribute="trailing" secondItem="Xfn-EL-yCy" secondAttribute="trailing" constant="5" id="vnH-n7-CFW"/>
+                        <constraint firstItem="Xfn-EL-yCy" firstAttribute="leading" secondItem="s7p-oj-j0l" secondAttribute="trailing" constant="5" id="wJh-aX-ztf"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uwy-Iu-LMp">
+                    <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="m9T-8D-gwa"/>
+                        <outlet property="delegate" destination="-1" id="bRe-1g-2Vc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Crh-EO-2pf" firstAttribute="top" secondItem="Uwy-Iu-LMp" secondAttribute="bottom" id="10l-PF-LQ7"/>
+                <constraint firstItem="Crh-EO-2pf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1vc-D1-Cvi"/>
+                <constraint firstAttribute="bottom" secondItem="Crh-EO-2pf" secondAttribute="bottom" id="80L-IO-95q"/>
+                <constraint firstItem="Uwy-Iu-LMp" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" constant="-108" id="9b7-70-nhN"/>
+                <constraint firstAttribute="trailing" secondItem="Crh-EO-2pf" secondAttribute="trailing" id="blf-RG-2P7"/>
+                <constraint firstAttribute="trailing" secondItem="Uwy-Iu-LMp" secondAttribute="trailing" id="pNt-Ae-jMJ"/>
+                <constraint firstItem="Uwy-Iu-LMp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vrN-ED-y5M"/>
+            </constraints>
+            <point key="canvasLocation" x="-237" y="76"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bottom_smile_nor" width="34" height="34"/>
+        <image name="chat_bottom_smile_nor_press" width="16" height="16"/>
+        <image name="chat_bottom_up_nor" width="34" height="34"/>
+        <image name="chat_bottom_up_press" width="34" height="34"/>
+        <image name="chat_bottom_voice_nor" width="34" height="34"/>
+        <image name="chat_bottom_voice_press" width="34" height="34"/>
+    </resources>
+</document>
